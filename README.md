@@ -1,7 +1,7 @@
 This is a Docker container that has all the tools necessary for creating gmapsupp.img files on any map from OpenStreetMap. To run the container, simply do:
-docker run bandi13/gmapsupp-generator -it --rm -v ~/:/root/output
+`docker run bandi13/gmapsupp-generator -it --rm -v ~/:/root/output`
 
-Then you can run 'cd /root && automap.sh' to generate the default map, or edit the variables in automap.sh to your liking. The temporary files will be kept in the container, and the gmapsupp.img will be copied to '/root/output' which is a volume that's mapped to '~/' on the host.
+Then you can run `cd /root && automap.sh` to generate the default map, or edit the variables in automap.sh to your liking. The temporary files will be kept in the container, and the gmapsupp.img will be copied to '/root/output' which is a volume that's mapped to '~/' on the host.
 
 automap
 =======
